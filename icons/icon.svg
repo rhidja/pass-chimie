@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5b3fd9"/>
+      <stop offset="1" stop-color="#2f5fd0"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#g)"/>
+  <!-- Fiole d’Erlenmeyer -->
+  <path d="M206 120h100v20h-14v84l86 150c12 22-3 46-28 46H162c-25 0-40-24-28-46l86-150v-84h-14z" fill="none" stroke="#fff" stroke-width="22" stroke-linejoin="round"/>
+  <path d="M178 330l52-90h52l52 90c6 11-1 22-13 22H191c-12 0-19-11-13-22z" fill="#fff" opacity=".92"/>
+  <circle cx="236" cy="306" r="12" fill="#5b3fd9"/>
+  <circle cx="280" cy="324" r="8" fill="#5b3fd9"/>
+</svg>

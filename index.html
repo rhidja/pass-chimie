@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PASS Médecine — Chimie</title>
+  <meta name="description" content="Cours, QCM corrigés et examens blancs pour réviser la chimie du PASS Médecine.">
+  <meta name="theme-color" content="#4b32c3">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Chimie PASS">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=Space+Grotesk:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="vendor/katex/katex.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // Le manifeste n'est ajouté qu'en http(s) : en file://, Chrome le refuse (erreur CORS).
+    if (location.protocol !== "file:") {
+      var l = document.createElement("link");
+      l.rel = "manifest";
+      l.href = "manifest.webmanifest";
+      document.head.appendChild(l);
+    }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <div class="topbar">
+        <span class="brand"><span class="brand-mark" aria-hidden="true">⚗</span> PASS Médecine — Chimie</span>
+        <div class="top-actions">
+          <button type="button" id="install-btn" class="btn btn-ghost" hidden>Installer l’app</button>
+          <button type="button" id="reset-btn" class="btn btn-ghost">Réinitialiser</button>
+        </div>
+      </div>
+      <p class="overline">Chimie · Première année d’accès santé</p>
+      <h1 class="hero-title">Comprendre. <span>Calculer.</span> Réussir.</h1>
+      <p class="hero-lead">33 cours progressifs, 420 QCM corrigés proposition par proposition et des examens blancs chronométrés pour maîtriser le programme de chimie du PASS.</p>
+      <p class="hero-format" id="hero-format"></p>
+      <nav class="tabs" role="tablist" aria-label="Sections">
+        <button type="button" class="tab" data-tab="programme" role="tab">Programme</button>
+        <button type="button" class="tab" data-tab="cours" role="tab">Cours</button>
+        <button type="button" class="tab" data-tab="entrainement" role="tab">Entraînement</button>
+        <button type="button" class="tab" data-tab="examen" role="tab">Examen blanc</button>
+        <button type="button" class="tab" data-tab="progression" role="tab">Progression</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap" id="view" tabindex="-1"></main>
+
+  <footer class="site-footer wrap">
+    <p>Contenu de révision indépendant. Les modalités d’examen (nombre de questions, durée, barème) sont celles de ton université : l’examen blanc est une simulation interne, au format non officiel.</p>
+  </footer>
+
+  <script src="vendor/katex/katex.min.js"></script>
+  <script src="vendor/katex/mhchem.min.js"></script>
+  <script src="vendor/katex/auto-render.min.js"></script>
+  <script src="data/domains.js"></script>
+  <script src="data/programme.js"></script>
+  <script src="data/courses.js"></script>
+  <script src="data/questions.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
